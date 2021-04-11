@@ -2,7 +2,15 @@
 - name: playbook for starting apache
   hosts: all
   tasks:
+    - name: Downloading from git hub
+      git:
+       repo: https://github.com/Ratinanda/Ansoolprogramme.git
+       dest: /tmp/test
+      become: yes
+
+  tasks:
     - name: installing apache
       yum:
         name: httpd
         state: present
+      become: yes
