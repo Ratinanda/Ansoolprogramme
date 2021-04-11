@@ -1,0 +1,8 @@
+---
+- name: playbook for starting apache
+  hosts: all
+  tasks:
+    - name: installing apache
+      yum:
+        name: httpd
+        state: present
