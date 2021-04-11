@@ -14,3 +14,9 @@
         name: httpd
         state: present
       become: yes
+  tasks:
+    - name: starting httpd the service
+      service:
+         name: httpd
+         state: started
+      become: yes
