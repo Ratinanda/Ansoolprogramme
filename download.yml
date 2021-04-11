@@ -20,3 +20,5 @@
          name: httpd
          state: started
       become: yes
+  tasks:
+    - name: test
