@@ -1,5 +1,5 @@
 import tkinter
-top = tkinter.Tk()
+left = tkinter.Tk("calculator")
 # Code to add widgets will go here...
-top.mainloop()
+left.mainloop()
 
